@@ -1,0 +1,35 @@
+
+--- users ---
+(0, 'id', 'INTEGER', 1, None, 1)
+(1, 'name', 'VARCHAR', 0, None, 0)
+(2, 'email', 'VARCHAR', 0, None, 0)
+(3, 'password', 'VARCHAR', 0, None, 0)
+(4, 'role', 'VARCHAR', 0, None, 0)
+(5, 'created_at', 'DATETIME', 0, None, 0)
+(6, 'reset_otp', 'VARCHAR', 0, None, 0)
+(7, 'otp_expiry', 'DATETIME', 0, None, 0)
+
+--- enrolments ---
+(0, 'id', 'INTEGER', 1, None, 1)
+(1, 'user_id', 'INTEGER', 0, None, 0)
+(2, 'course_id', 'INTEGER', 0, None, 0)
+(3, 'enrolled_at', 'DATETIME', 0, None, 0)
+
+--- batches ---
+(0, 'id', 'INTEGER', 1, None, 1)
+(1, 'name', 'VARCHAR', 0, None, 0)
+(2, 'course_id', 'INTEGER', 0, None, 0)
+(3, 'instructor_id', 'INTEGER', 0, None, 0)
+(4, 'start_time', 'DATETIME', 0, None, 0)
+(5, 'end_time', 'DATETIME', 0, None, 0)
+(6, 'created_at', 'DATETIME', 0, None, 0)
+
+--- questions ---
+(0, 'id', 'INTEGER', 1, None, 1)
+(1, 'questionText', 'VARCHAR', 0, None, 0)
+(2, 'questionType', 'VARCHAR', 0, None, 0)
+(3, 'correctOptionIndex', 'INTEGER', 0, None, 0)
+(4, 'correctAnswerText', 'VARCHAR', 0, None, 0)
+(5, 'module_id', 'INTEGER', 0, None, 0)
+(6, 'course_id', 'INTEGER', 0, None, 0)
+(7, 'difficulty', 'VARCHAR', 0, None, 0)

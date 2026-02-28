@@ -1,0 +1,7 @@
+Testing OPTIONS for /courses/2
+OPTIONS Status: 200
+CORS Header Present: http://127.0.0.1:5173
+Testing GET for /courses/2
+GET Status: 500
+Response: Internal Server Error
+CORS Header MISSING in GET response
